@@ -3,6 +3,7 @@ namespace IGeTui\Template;
 
 use IGeTui\Utils\ApnsUtils;
 use IGeTui\ActionChain;
+use IGeTui\Transparent;
 
 class BaseTemplate{
 	var $appId;

@@ -1,7 +1,7 @@
 <?php 
 namespace IGeTui;
 
-use IGeTui\IGtMessage;
+use IGeTui\Message;
 
 class ListMessage extends Message{
 	

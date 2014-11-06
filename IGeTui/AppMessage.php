@@ -1,6 +1,8 @@
 <?php 
 namespace IGeTui;
 
+use IGeTui\Message;
+
 class AppMessage extends Message{
 	
 	//array('','',..)

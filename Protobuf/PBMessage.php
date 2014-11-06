@@ -1,15 +1,15 @@
 <?php
 namespace Protobuf;
 
-use Protobuf\Encoding\pb_base128;
-use Protobuf\Type\pb_scalar;
-use Protobuf\Type\pb_enum;
-use Protobuf\Type\pb_string;
-use Protobuf\Type\pb_int;
-use Protobuf\Type\pb_bool;
-use Protobuf\Type\pb_signed_int;
-use Protobuf\Reader\pb_input_reader;
-use Protobuf\Reader\pb_input_string_reader;
+use Protobuf\Encoding\PBBase128;
+use Protobuf\Type\PBScalar;
+use Protobuf\Type\PBEnum;
+use Protobuf\Type\PBString;
+use Protobuf\Type\PBInt;
+use Protobuf\Type\PBBool;
+use Protobuf\Type\PBSignedInt;
+use Protobuf\Reader\PBInputReader;
+use Protobuf\Reader\PBInputStringReader;
 
 /**
  * Including of all files needed to parse messages
