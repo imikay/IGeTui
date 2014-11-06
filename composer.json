@@ -20,8 +20,8 @@
 
      "autoload": {
 	"psr-4" : {
-		"IGeTui\\": "lib/",
-                "Protobuf\\": "lib/Protobuf/"
+		"IGeTui\\": "IGeTui",
+                "Protobuf\\": "Protobuf"
 	}
      }
 }
