@@ -30,7 +30,7 @@ use IGeTui\Template\APNTemplate;
 // require_once(dirname(__FILE__) . '/' . 'igetui/template/IGt.NotyPopLoadTemplate.php');
 // require_once(dirname(__FILE__) . '/' . 'igetui/template/IGt.APNTemplate.php');
 
-Class IGeTui
+class IGeTui
 {
     var $appkey; //第三方 标识
     var $masterSecret; //第三方 密钥

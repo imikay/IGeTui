@@ -4,8 +4,6 @@ namespace IGeTui\Template;
 use IGeTui\Utils\ApnsUtils;
 use IGeTui\ActionChain;
 
-// require_once(dirname(__FILE__) . '/' . '../utils/ApnsUtils.php');
-
 class BaseTemplate{
 	var $appId;
 	var $appkey;
