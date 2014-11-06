@@ -2,7 +2,7 @@
 namespace Protobuf\Type;
 
 use Protobuf\Type\PBScalar;
-use Protobuf\PBMessage;
+use Protobuf\Type\PBMessage;
 
 /**
  * @author Nikolai Kordulla

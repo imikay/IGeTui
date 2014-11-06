@@ -1,5 +1,5 @@
 <?php
-namespace Protobuf;
+namespace Protobuf\Type;
 
 use Protobuf\Encoding\PBBase128Varint;
 use Protobuf\Type\PBScalar;
@@ -264,7 +264,7 @@ abstract class PBMessage
      */
     protected function _remove_last_arr_value($index)
     {
-    	array_pop($this->values[$index]);
+        array_pop($this->values[$index]);
     }
 
     /**
@@ -366,7 +366,7 @@ abstract class PBMessage
         return $this->_d_string;
     }
     
- 	/**
+    /**
      * Fix Memory Leaks with Objects in PHP 5
      * http://paul-m-jones.com/?p=262
      * 
@@ -413,7 +413,7 @@ abstract class PBMessage
                         unset($value2);
                     }
                     if (isset($name2))
-                    	unset($value->$name2);
+                        unset($value->$name2);
                 }
                 else
                 {

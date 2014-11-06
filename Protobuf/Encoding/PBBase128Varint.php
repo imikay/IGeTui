@@ -5,7 +5,7 @@ namespace Protobuf\Encoding;
  * Base 128 varints - decodes and encodes base128 varints to/from decimal
  * @author Nikolai Kordulla
  */
-class PBBase128Varints
+class PBBase128Varint
 {
     // modus for output
     var $modus = 1;

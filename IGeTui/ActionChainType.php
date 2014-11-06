@@ -1,4 +1,9 @@
-class ActionChain_Type extends PBEnum
+<?php
+namespace IGeTui;
+
+use Protobuf\Type\PBEnum;
+
+class ActionChainType extends PBEnum
 {
   const refer  = 0;
   const notification  = 1;

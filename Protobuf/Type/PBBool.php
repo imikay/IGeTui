@@ -3,7 +3,6 @@ namespace Protobuf\Type;
 
 use Protobuf\Type\PBInt;
 use Protobuf\Type\PBMessage;
-use Protobuf\PBMessage;
 
 /**
  * @author Nikolai Kordulla

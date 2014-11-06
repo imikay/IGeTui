@@ -1,26 +1,31 @@
+<?php
+namespace IGeTui;
+
+use Protobuf\PBMessage;
+
 class PushInfo extends PBMessage
 {
   var $wired_type = PBMessage::WIRED_LENGTH_DELIMITED;
   public function __construct($reader=null)
   {
     parent::__construct($reader);
-    $this->fields["1"] = "PBString";
+    $this->fields["1"] = "Protobuf\\Type\\PBString";
     $this->values["1"] = "";
-    $this->fields["2"] = "PBString";
+    $this->fields["2"] = "Protobuf\\Type\\PBString";
     $this->values["2"] = "";
-    $this->fields["3"] = "PBString";
+    $this->fields["3"] = "Protobuf\\Type\\PBString";
     $this->values["3"] = "";
-    $this->fields["4"] = "PBString";
+    $this->fields["4"] = "Protobuf\\Type\\PBString";
     $this->values["4"] = "";
-    $this->fields["5"] = "PBString";
+    $this->fields["5"] = "Protobuf\\Type\\PBString";
     $this->values["5"] = "";
-    $this->fields["6"] = "PBString";
+    $this->fields["6"] = "Protobuf\\Type\\PBString";
     $this->values["6"] = "";
-    $this->fields["7"] = "PBString";
+    $this->fields["7"] = "Protobuf\\Type\\PBString";
     $this->values["7"] = "";
-    $this->fields["8"] = "PBString";
+    $this->fields["8"] = "Protobuf\\Type\\PBString";
     $this->values["8"] = "";
-    $this->fields["9"] = "PBString";
+    $this->fields["9"] = "Protobuf\\Type\\PBString";
     $this->values["9"] = "";
   }
   function message()

@@ -1,6 +1,10 @@
 <?php 
 namespace IGeTui\Template;
 
+use IGeTui\ActionChain;
+use IGeTui\ActionChainType;
+use IGeTui\AppStartUp;
+
 class NotificationTemplate extends BaseTemplate {
 
 	var $text;
@@ -21,13 +25,13 @@ class NotificationTemplate extends BaseTemplate {
 		// 设置actionChain
 		$actionChain1 = new ActionChain();
 		$actionChain1->set_actionId(1);
-		$actionChain1->set_type(ActionChain_Type::refer);
+		$actionChain1->set_type(ActionChainType::refer);
 		$actionChain1->set_next(10000);
 		
 		//通知
 		$actionChain2 = new ActionChain();
 		$actionChain2->set_actionId(10000);
-		$actionChain2->set_type(ActionChain_Type::notification);
+		$actionChain2->set_type(ActionChainType::notification);
 		$actionChain2->set_title($this->title);
 		$actionChain2->set_text($this->text);
 		$actionChain2->set_logo($this->logo);
@@ -41,7 +45,7 @@ class NotificationTemplate extends BaseTemplate {
 		//goto
 		$actionChain3 = new ActionChain();
 		$actionChain3->set_actionId(10010);
-		$actionChain3->set_type(ActionChain_Type::refer);
+		$actionChain3->set_type(ActionChainType::refer);
 		$actionChain3->set_next(10030);
 	
 
@@ -54,7 +58,7 @@ class NotificationTemplate extends BaseTemplate {
 		//启动app
 		$actionChain4 = new ActionChain();
 		$actionChain4->set_actionId(10030);
-		$actionChain4->set_type(ActionChain_Type::startapp);
+		$actionChain4->set_type(ActionChainType::startapp);
 		$actionChain4->set_appid("");
 		$actionChain4->set_autostart($this->transmissionType == '1'? true : false);
 		$actionChain4->set_appstartupid($appStartUp);
@@ -65,7 +69,7 @@ class NotificationTemplate extends BaseTemplate {
 		//结束
 		$actionChain5 = new ActionChain();
 		$actionChain5->set_actionId(100);
-		$actionChain5->set_type(ActionChain_Type::eoa);
+		$actionChain5->set_type(ActionChainType::eoa);
  
 		array_push($actionChains, $actionChain1,$actionChain2,$actionChain3,$actionChain4,$actionChain5);
 

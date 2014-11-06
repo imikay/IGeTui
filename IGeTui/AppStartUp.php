@@ -1,3 +1,7 @@
+<?php
+namespace IGeTui;
+
+use Protobuf\PBMessage;
 
 class AppStartUp extends PBMessage
 {
@@ -5,11 +9,11 @@ class AppStartUp extends PBMessage
   public function __construct($reader=null)
   {
     parent::__construct($reader);
-    $this->fields["1"] = "PBString";
+    $this->fields["1"] = "Protobuf\\Type\\PBString";
     $this->values["1"] = "";
-    $this->fields["2"] = "PBString";
+    $this->fields["2"] = "Protobuf\\Type\\PBString";
     $this->values["2"] = "";
-    $this->fields["3"] = "PBString";
+    $this->fields["3"] = "Protobuf\\Type\\PBString";
     $this->values["3"] = "";
   }
   function android()

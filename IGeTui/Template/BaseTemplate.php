@@ -4,6 +4,7 @@ namespace IGeTui\Template;
 use IGeTui\Utils\ApnsUtils;
 use IGeTui\ActionChain;
 use IGeTui\Transparent;
+use IGeTui\PushInfo;
 
 class BaseTemplate{
 	var $appId;
