@@ -1,5 +1,5 @@
 <?php
-namespace IGetui; 
+namespace IGeTui; 
 
 use Protobuf\PBMessage;
 // use IGeTui\Req;
